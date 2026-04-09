@@ -10,7 +10,7 @@ from langchain.chains.question_answering import load_qa_chain
 import platform
 
 # App title and presentation
-st.title('Asistente de Estudio Inteligente 📚💬')
+st.title('Asistente de Estudio Inteligente 📚')
 st.write("Una herramienta pensada para ayudarte a entender textos largos después de un día cansado 😌")
 st.write("Versión de Python:", platform.python_version())
 
@@ -27,11 +27,11 @@ with st.sidebar:
     st.write("Este asistente te ayuda a resumir, entender y responder preguntas sobre documentos PDF de forma sencilla.")
 
 # Get API key from user
-st.subheader("🔑 Configuración inicial")
+st.subheader(" Configuración inicial")
 ke = st.text_input('Ingresa tu clave de OpenAI', type="password")
 
 # Expandable instructions
-with st.expander("❓ ¿No tienes una API Key? Aprende cómo obtenerla (haz clic aquí)"):
+with st.expander(" ¿No tienes una API Key? Aprende cómo obtenerla (haz clic aquí)"):
     st.markdown("""
     Sigue estos pasos para obtener tu API Key de OpenAI:
 
